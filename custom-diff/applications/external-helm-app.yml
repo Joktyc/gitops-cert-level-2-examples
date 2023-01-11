@@ -21,4 +21,7 @@ spec:
   syncPolicy:
     syncOptions:
       - CreateNamespace=true  
+  ignoreDifferences:
+    creation: at-{{ now | date "20160102150405" }}
+    my-password: ++++++++++++
    
